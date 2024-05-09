@@ -1,0 +1,446 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page1</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+       
+        body {
+            background: black;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            height: 70px;
+            width: 100%;
+            background-color: green;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            
+        }
+
+        input {
+            margin-top: 2vh;
+            height: 40px;
+            width: 600px;
+            border-radius: 3px;
+            border: 2px solid white;
+            font-family: bold;
+            font-weight:bolder;
+            color: green;
+            margin-left: -200px;
+        }
+
+        button {
+            height: 37px;
+            width: 100px;
+            margin-top: -5vh;
+            border-radius: 40px;
+            margin-right: 10px;
+            background-color: black;
+            color: white;
+            font-family: monospace;
+        }
+
+        button:hover{
+background-color: green;
+}
+.button:hover{
+  transition: all 0.5s;
+}
+.hover:hover{
+  transform: scale(1.1);
+}
+  
+.h1:hover{
+  color: black;
+}
+.h1:hover{
+  transition: all 0.5s; 
+}
+.h2:hover{
+  color: black;
+}
+.h2:hover{
+  transition: all 0.5s;
+}
+.inp:hover{
+  transform: scale(1.1);
+}
+.inp:hover{
+  transition: all 0.5s;
+}
+        @media (max-width: 768px) {
+            input {
+                width: 80%;
+            }
+
+            button {
+                margin-left: auto;
+                margin-right: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            input {
+                width: 90%;
+            }
+
+            button {
+                margin-left: auto;
+                margin-right: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input class="inp"  type="search" name="" id="searchInput" placeholder="  What do you want to listen to?">
+        <button style="margin-left: 670px; border: 2px solid black;" onclick="searchSpotify()">Search</button>
+    </div>
+    <img style="margin-right: auto; margin-top: -70px; display: flex;" src="https://clipground.com/images/png-spotify-1.png" height="73px" width="73px">
+    <a style="text-decoration: none; margin-left: 70px; margin-top: -90px; display: flex; color: white; font-size: x-large;" href="#"><h2>Spotify</h2></a>
+    <a style="text-decoration: none; margin-left: 1255px; margin-top: -80px; display: flex; color: white; font-size: larger;" href="#"><h4 class="h1">sign up</h4></a>
+    <a style="text-decoration: none; margin-left: 1345px; margin-top: -57px; display: flex; color: white; font-size: larger; border: 2px solid white; background-color: white; color: black; border-radius: 30px; height: 37px; width: 90px;" href="#"><h4  style="margin-top: 7px; margin-left: 17px; " class="h2">Login</h4></a>
+    <h1 style="color: white; margin-left: 210px; margin-top: 40px; ">Tollywood and Hollywood songs...</h1>
+
+    <div style="border: 3px solid black; height: 670px; width: 180px; margin-top: -90px; box-shadow: 5px  2px azure;">
+    <img style="margin-top: 100px; margin-left: 35px;"    src="https://icon-library.com/images/black-house-icon/black-house-icon-20.jpg" height="23px" width="25px"></img>
+    <a style="text-decoration: none; margin-left: 70px; margin-top: -51px; display: flex; color: white; font-size: larger;" href="#"><h4 class="h1">Home</h4></a>
+    <img style="margin-top: 20px; margin-left: 35px;"    src="https://thumbs.dreamstime.com/b/playlist-icon-vector-isolated-black-background-eps-92737270.jpg" height="30px" width="25px"></img>
+    <a style="text-decoration: none; margin-left: 70px; margin-top: -55px; display: flex; color: white; font-size: larger;" href="#"><h4 class="h2">Playlist</h4></a>
+    <img style="margin-top: 20px; margin-left: 34px;"    src="https://i.pinimg.com/564x/f4/0f/3f/f40f3fb63e1e5ce0a02179c78355beaa.jpg" height="30px" width="25px"></img>
+    <a style="text-decoration: none; margin-left: 70px; margin-top: -55px; display: flex; color: white; font-size: larger;" href="#"><h4 class="h2">Downloads</h4></a>
+    <img style="margin-top: 20px; margin-left: 27px;"    src="https://st2.depositphotos.com/1797936/48068/v/450/depositphotos_480688946-stock-illustration-illustrated-icon-isolated-background-demi.jpg" height="40px" width="45px"></img>
+    <a style="text-decoration: none; margin-left: 73px; margin-top: -59px; display: flex; color: white; font-size: larger;" href="#"><h4 class="h2">Music</h4></a>
+    <img style="margin-top: 20px; margin-left: 32px;"    src="https://i.pinimg.com/736x/c6/13/1e/c6131e0206d37d4f4146d53c6e3d16f3.jpg" height="30px" width="45px"></img>
+    <a style="text-decoration: none; margin-left: 75px; margin-top: -55px; display: flex; color: white; font-size: larger;" href="#"><h4 class="h2">Libraries</h4></a>
+    <img style="margin-top: 20px; margin-left: 30px;"    src="https://img.freepik.com/premium-vector/vinyl-record-sound-graph-black-background-music-illustration-icon-vector_484720-2957.jpg" height="30px" width="45px"></img>
+    <a style="text-decoration: none; margin-left: 75px; margin-top: -55px; display: flex; color: white; font-size: larger;" href="#"><h4 class="h2">Albums</h4></a>
+    <img style="margin-top: 20px; margin-left: 34px;"    src="https://i.pinimg.com/736x/3c/b5/d1/3cb5d19f756bc95af4354a32797c7149.jpg" height="40px" width="35px"></img>
+    <a style="text-decoration: none; margin-left: 75px; margin-top: -57px; display: flex; color: white; font-size: larger;" href="#"><h4 class="h2">Favorites</h4></a>
+
+    </div>
+
+     <div style="margin-left: 200px; margin-top: -574px;">
+    <marquee style="border-radius: 100px;" direction="left" scrollamount="17" >
+      <img class="hover"   style="border-radius: 7px;" src="https://www.themoviedb.org/t/p/original/ncXklBeNi7X7OETqmDVEgaf8ItQ.jpg" height="230px"width="160px">""
+      <img class="hover" style="border-radius: 7px;" src="https://assets.gadgets360cdn.com/pricee/assets/product/202301/Animal_1673270841.jpg" height="230px"width="160px">""
+      <img  class="hover"style="border-radius: 7px;" src="https://movies4u.cheap/wp-content/uploads/2024/01/Salaar-Part-1.jpg" height="230px"width="160px" > ""
+      <img  class="hover"style="border-radius: 7px;" src="https://1.bp.blogspot.com/-UGtnnWNjL0U/YOrDjcanEdI/AAAAAAAAxWg/gFoHJ2y4KfEkb5jZ5-HA8S-3HlA4DU1mgCNcBGAsYHQ/s912/Vikram-Poster-2.jpg" height="230px"width="160px">"" 
+      <img  class="hover"style="border-radius: 7px;" src="https://akm-img-a-in.tosshub.com/sites/dailyo/resources/202207/jawan-movie-srk-poster-2023-1060722033206.png" height="230px"width="160px"> ""
+      <img class="hover" style="border-radius: 7px;" src="https://m.media-amazon.com/images/M/MV5BYWVlMjVhZWYtNWViNC00ODFkLTk1MmItYjU1MDY5ZDdhMTU3XkEyXkFqcGdeQXVyODIwMDI1NjM@.V1.jpg"height="230px"width="160px" > ""
+      <img class="hover" style="border-radius: 7px;" src="https://1.bp.blogspot.com/-OAVNUkRA3gw/WO0bUfQWBVI/AAAAAAAAOMg/Xh-S9XsF9j0c1WWRFfx9sQL8yNUbXWGPgCLcB/s1600/Bahubali%2B2%2BMovie%2BPoster.jpg" height="230px"width="160px"> ""
+      <img class="hover" style="border-radius: 7px;" src="https://assets.gadgets360cdn.com/pricee/assets/product/202303/Leo_1678967552.jpg" height="230px"width="160px">""
+      <img  class="hover"style="border-radius: 7px;" src="https://d1vzdswwroofzl.cloudfront.net/wp-content/uploads/2023/01/Waltair-Veerayya-Movie-Review-Rating-3.jpg" height="230px"width="160px"> ""
+      <img class="hover" style="border-radius: 7px;" src="https://m.media-amazon.com/images/S/pv-target-images/798fa523a1729f4f2e81ef55f51d91c8b12c4ddd7feede2219be3fe611433e95.jpg" height="230px"width="160px">""    
+      <img  class="hover"style="border-radius: 7px;" src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/hi-nanna-et00364503-1701678655.jpg" height="230px"width="160px">  ""
+      <img class="hover" style="border-radius: 7px;" src="https://assets.gadgets360cdn.com/pricee/assets/product/202203/Beast-poster_1647687760.jpg" height="230px"width="160px"> ""
+      <img class="hover" style="border-radius: 7px;" src="https://ih1.redbubble.net/image.3379739087.4774/flat,750x,075,f-pad,750x1000,f8f8f8.u1.jpg" height="230px"width="160px"> ""
+      </marquee>
+    </div>
+
+
+    <div style="margin-left: 200px;">
+      <h1 style="color: white; margin-left: 20px; ">Marvel songs studio...</h1>
+      <marquee style="border-radius: 100px;" direction="right" scrollamount="17">
+        <img class="hover" style="border-radius: 7px;" src="https://image.tmdb.org/t/p/original/btocnvK4l8a4BGS887ed3lsTFog.jpg" height="230px"width="160px"> ""
+        <img class="hover" style="border-radius: 7px;" src="https://www.themoviedb.org/t/p/original/3OkXrXYsXELnqCqGhgYHvDXTc3v.jpg"height="230px"width="160px">""
+        <img class="hover" style="border-radius: 7px;" src="https://image.tmdb.org/t/p/original/s5JXBTxHUJCKsuEWZ8Z7J6L1JtC.jpg" height="230px"width="160px">"" 
+        <img  class="hover"style="border-radius: 7px;" src="https://i.annihil.us/u/prod/marvel/i/mg/f/60/5c64a9fd2bba8/clean.jpg" height="230px"width="160px"> ""
+        <img class="hover" style="border-radius: 7px;" src="https://www.themoviedb.org/t/p/original/3Q7VxyZlqCEfiUY9E9bcBE9qcyu.jpg" height="230px"width="160px"> ""
+        <img class="hover" style="border-radius: 7px;" src="https://picfiles.alphacoders.com/351/351486.jpg" height="230px"width="160px"> ""
+        <img class="hover" style="border-radius: 7px;" src="https://tse2.mm.bing.net/th?id=OIP.NlX6NQdwc4fLjzj92ObpPwHaEK&pid=Api&P=0&h=180" height="230px"width="160px"> ""
+        <img class="hover" style="border-radius: 7px;" src="http://wallpapercave.com/wp/wp1857390.jpg" height="230px"width="160px">""
+        <img  class="hover"style="border-radius: 7px;" src="https://www.themoviedb.org/t/p/original/j9DEVSoegRdFYY3EMiUPTwHzSR5.jpg" height="230px"width="160px">"" 
+        <img class="hover" style="border-radius: 7px;" src="https://wallpapers.com/images/featured/avengers-assemble-pictures-bci4k731q4fiilqe.jpg" height="230px"width="160px"> ""   
+        <img class="hover" style="border-radius: 7px;" src="https://2.bp.blogspot.com/-cPZZtG_uRgY/VzIQpRE3oTI/AAAAAAAAD5Y/87qulnqCQL00pngmpIOgKvcFwGaHudKCQCLcB/s1600/Marvel-Civil-War-alternate-poster.jpg" height="230px"width="160px"> "" 
+        <img class="hover" style="border-radius: 7px;" src="https://picfiles.alphacoders.com/214/thumb-1920-214533.jpg" height="230px"width="160px"> ""
+        <img class="hover" style="border-radius: 7px;" src="https://image.tmdb.org/t/p/original/gj0fKa4jjwxZLmVq7I8tv13V45.jpg" height="230px"width="160px"> ""
+        </marquee>
+    </div>
+   
+
+    <div id="resultsContainer"></div>
+
+    <script>
+        function searchSpotify() {
+            const searchInput = document.getElementById('searchInput').value;
+
+            if (!searchInput.trim()) {
+                alert('Please enter a search data.');
+                return;
+            }
+
+            fetch(https:spotify23.p.rapidapi.com/search/?q=${searchInput}&type=multi&offset=0&limit=10&numberOfTopResults=5, {
+                method: 'GET',
+                headers: {
+                    'X-RapidAPI-Key': '5f6ad288aamshb637f0abaf78701p1d7a1djsnc7b60b58dcb9',
+                    'X-RapidAPI-Host': 'spotify23.p.rapidapi.com'
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+                window.localStorage.setItem("data", JSON.stringify(data));
+                window.location.assign("./songs.html");
+
+                let resultsContainer = document.getElementById('resultsContainer');
+                resultsContainer.innerHTML = '';
+
+                data.albums.items.forEach(item => {
+                    let card = document.createElement('div');
+                    card.className = 'card';
+
+                    let imageN = document.createElement('img');
+                    imageN.src = item.data.coverArt.sources[0].url;
+                    card.appendChild(imageN);
+
+                    let songN = document.createElement('h3');
+                    songN.textContent = item.data.album.name;
+                    card.appendChild(songN);
+
+                    let artistN = document.createElement('h3');
+                    artistN.textContent = item.data.album.artist;
+                    card.appendChild(artistN);
+
+                    resultsContainer.appendChild(card);
+                });
+            })
+            .catch(error => {
+                console.error('Error fetching data:', error);
+            });
+        }
+    </script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page1</title>
+    <style>
+        /* Your CSS styles here */
+        body {
+            background: black;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            height: 70px;
+            width: 100%;
+            background-color: green;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            
+        }
+
+        input {
+            margin-top: 2vh;
+            height: 40px;
+            width: 600px;
+            border-radius: 3px;
+            border: 2px solid white;
+            font-family: bold;
+            font-weight:bolder;
+            color: green;
+            margin-left: -200px;
+        }
+
+        button {
+            height: 37px;
+            width: 100px;
+            margin-top: -5vh;
+            border-radius: 40px;
+            margin-right: 10px;
+            background-color: black;
+            color: white;
+            font-family: monospace;
+        }
+
+        button:hover{
+background-color: green;
+}
+.button:hover{
+  transition: all 0.5s;
+}
+.hover:hover{
+  transform: scale(1.1);
+}
+  
+.h1:hover{
+  color: black;
+}
+.h1:hover{
+  transition: all 0.5s; 
+}
+.h2:hover{
+  color: black;
+}
+.h2:hover{
+  transition: all 0.5s;
+}
+.inp:hover{
+  transform: scale(1.1);
+}
+.inp:hover{
+  transition: all 0.5s;
+}
+        @media (max-width: 768px) {
+            input {
+                width: 80%;
+            }
+
+            button {
+                margin-left: auto;
+                margin-right: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            input {
+                width: 90%;
+            }
+
+            button {
+                margin-left: auto;
+                margin-right: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input class="inp"  type="search" name="" id="searchInput" placeholder="  What do you want to listen to?">
+        <button style="margin-left: 670px; border: 2px solid black;" onclick="searchSpotify()">Search</button>
+    </div>
+    <!-- Rest of your HTML content here -->
+    <img style="margin-right: auto; margin-top: -70px; display: flex;" src="https://clipground.com/images/png-spotify-1.png" height="73px" width="73px">
+    <a style="text-decoration: none; margin-left: 70px; margin-top: -90px; display: flex; color: white; font-size: x-large;" href="#"><h2>Spotify</h2></a>
+    <a style="text-decoration: none; margin-left: 1255px; margin-top: -80px; display: flex; color: white; font-size: larger;" href="#"><h4 class="h1">sign up</h4></a>
+    <a style="text-decoration: none; margin-left: 1345px; margin-top: -57px; display: flex; color: white; font-size: larger; border: 2px solid white; background-color: white; color: black; border-radius: 30px; height: 37px; width: 90px;" href="#"><h4  style="margin-top: 7px; margin-left: 17px; " class="h2">Login</h4></a>
+    <h1 style="color: white; margin-left: 210px; margin-top: 40px; ">Tollywood and Hollywood songs...</h1>
+
+    <div style="border: 3px solid black; height: 670px; width: 180px; margin-top: -90px; box-shadow: 5px  2px azure;">
+    <img style="margin-top: 100px; margin-left: 35px;"    src="https://icon-library.com/images/black-house-icon/black-house-icon-20.jpg" height="23px" width="25px"></img>
+    <a style="text-decoration: none; margin-left: 70px; margin-top: -51px; display: flex; color: white; font-size: larger;" href="#"><h4 class="h1">Home</h4></a>
+    <img style="margin-top: 20px; margin-left: 35px;"    src="https://thumbs.dreamstime.com/b/playlist-icon-vector-isolated-black-background-eps-92737270.jpg" height="30px" width="25px"></img>
+    <a style="text-decoration: none; margin-left: 70px; margin-top: -55px; display: flex; color: white; font-size: larger;" href="#"><h4 class="h2">Playlist</h4></a>
+    <img style="margin-top: 20px; margin-left: 34px;"    src="https://i.pinimg.com/564x/f4/0f/3f/f40f3fb63e1e5ce0a02179c78355beaa.jpg" height="30px" width="25px"></img>
+    <a style="text-decoration: none; margin-left: 70px; margin-top: -55px; display: flex; color: white; font-size: larger;" href="#"><h4 class="h2">Downloads</h4></a>
+    <img style="margin-top: 20px; margin-left: 27px;"    src="https://st2.depositphotos.com/1797936/48068/v/450/depositphotos_480688946-stock-illustration-illustrated-icon-isolated-background-demi.jpg" height="40px" width="45px"></img>
+    <a style="text-decoration: none; margin-left: 73px; margin-top: -59px; display: flex; color: white; font-size: larger;" href="#"><h4 class="h2">Music</h4></a>
+    <img style="margin-top: 20px; margin-left: 32px;"    src="https://i.pinimg.com/736x/c6/13/1e/c6131e0206d37d4f4146d53c6e3d16f3.jpg" height="30px" width="45px"></img>
+    <a style="text-decoration: none; margin-left: 75px; margin-top: -55px; display: flex; color: white; font-size: larger;" href="#"><h4 class="h2">Libraries</h4></a>
+    <img style="margin-top: 20px; margin-left: 30px;"    src="https://img.freepik.com/premium-vector/vinyl-record-sound-graph-black-background-music-illustration-icon-vector_484720-2957.jpg" height="30px" width="45px"></img>
+    <a style="text-decoration: none; margin-left: 75px; margin-top: -55px; display: flex; color: white; font-size: larger;" href="#"><h4 class="h2">Albums</h4></a>
+    <img style="margin-top: 20px; margin-left: 34px;"    src="https://i.pinimg.com/736x/3c/b5/d1/3cb5d19f756bc95af4354a32797c7149.jpg" height="40px" width="35px"></img>
+    <a style="text-decoration: none; margin-left: 75px; margin-top: -57px; display: flex; color: white; font-size: larger;" href="#"><h4 class="h2">Favorites</h4></a>
+
+    </div>
+
+     <div style="margin-left: 200px; margin-top: -574px;">
+    <marquee style="border-radius: 100px;" direction="left" scrollamount="17" >
+      <img class="hover"   style="border-radius: 7px;" src="https://www.themoviedb.org/t/p/original/ncXklBeNi7X7OETqmDVEgaf8ItQ.jpg" height="230px"width="160px">""
+      <img class="hover" style="border-radius: 7px;" src="https://assets.gadgets360cdn.com/pricee/assets/product/202301/Animal_1673270841.jpg" height="230px"width="160px">""
+      <img  class="hover"style="border-radius: 7px;" src="https://movies4u.cheap/wp-content/uploads/2024/01/Salaar-Part-1.jpg" height="230px"width="160px" > ""
+      <img  class="hover"style="border-radius: 7px;" src="https://1.bp.blogspot.com/-UGtnnWNjL0U/YOrDjcanEdI/AAAAAAAAxWg/gFoHJ2y4KfEkb5jZ5-HA8S-3HlA4DU1mgCNcBGAsYHQ/s912/Vikram-Poster-2.jpg" height="230px"width="160px">"" 
+      <img  class="hover"style="border-radius: 7px;" src="https://akm-img-a-in.tosshub.com/sites/dailyo/resources/202207/jawan-movie-srk-poster-2023-1060722033206.png" height="230px"width="160px"> ""
+      <img class="hover" style="border-radius: 7px;" src="https://m.media-amazon.com/images/M/MV5BYWVlMjVhZWYtNWViNC00ODFkLTk1MmItYjU1MDY5ZDdhMTU3XkEyXkFqcGdeQXVyODIwMDI1NjM@.V1.jpg"height="230px"width="160px" > ""
+      <img class="hover" style="border-radius: 7px;" src="https://1.bp.blogspot.com/-OAVNUkRA3gw/WO0bUfQWBVI/AAAAAAAAOMg/Xh-S9XsF9j0c1WWRFfx9sQL8yNUbXWGPgCLcB/s1600/Bahubali%2B2%2BMovie%2BPoster.jpg" height="230px"width="160px"> ""
+      <img class="hover" style="border-radius: 7px;" src="https://assets.gadgets360cdn.com/pricee/assets/product/202303/Leo_1678967552.jpg" height="230px"width="160px">""
+      <img  class="hover"style="border-radius: 7px;" src="https://d1vzdswwroofzl.cloudfront.net/wp-content/uploads/2023/01/Waltair-Veerayya-Movie-Review-Rating-3.jpg" height="230px"width="160px"> ""
+      <img class="hover" style="border-radius: 7px;" src="https://m.media-amazon.com/images/S/pv-target-images/798fa523a1729f4f2e81ef55f51d91c8b12c4ddd7feede2219be3fe611433e95.jpg" height="230px"width="160px">""    
+      <img  class="hover"style="border-radius: 7px;" src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/hi-nanna-et00364503-1701678655.jpg" height="230px"width="160px">  ""
+      <img class="hover" style="border-radius: 7px;" src="https://assets.gadgets360cdn.com/pricee/assets/product/202203/Beast-poster_1647687760.jpg" height="230px"width="160px"> ""
+      <img class="hover" style="border-radius: 7px;" src="https://ih1.redbubble.net/image.3379739087.4774/flat,750x,075,f-pad,750x1000,f8f8f8.u1.jpg" height="230px"width="160px"> ""
+      </marquee>
+    </div>
+
+
+    <div style="margin-left: 200px;">
+      <h1 style="color: white; margin-left: 20px; ">Marvel songs studio...</h1>
+      <marquee style="border-radius: 100px;" direction="right" scrollamount="17">
+        <img class="hover" style="border-radius: 7px;" src="https://image.tmdb.org/t/p/original/btocnvK4l8a4BGS887ed3lsTFog.jpg" height="230px"width="160px"> ""
+        <img class="hover" style="border-radius: 7px;" src="https://www.themoviedb.org/t/p/original/3OkXrXYsXELnqCqGhgYHvDXTc3v.jpg"height="230px"width="160px">""
+        <img class="hover" style="border-radius: 7px;" src="https://image.tmdb.org/t/p/original/s5JXBTxHUJCKsuEWZ8Z7J6L1JtC.jpg" height="230px"width="160px">"" 
+        <img  class="hover"style="border-radius: 7px;" src="https://i.annihil.us/u/prod/marvel/i/mg/f/60/5c64a9fd2bba8/clean.jpg" height="230px"width="160px"> ""
+        <img class="hover" style="border-radius: 7px;" src="https://www.themoviedb.org/t/p/original/3Q7VxyZlqCEfiUY9E9bcBE9qcyu.jpg" height="230px"width="160px"> ""
+        <img class="hover" style="border-radius: 7px;" src="https://picfiles.alphacoders.com/351/351486.jpg" height="230px"width="160px"> ""
+        <img class="hover" style="border-radius: 7px;" src="https://tse2.mm.bing.net/th?id=OIP.NlX6NQdwc4fLjzj92ObpPwHaEK&pid=Api&P=0&h=180" height="230px"width="160px"> ""
+        <img class="hover" style="border-radius: 7px;" src="http://wallpapercave.com/wp/wp1857390.jpg" height="230px"width="160px">""
+        <img  class="hover"style="border-radius: 7px;" src="https://www.themoviedb.org/t/p/original/j9DEVSoegRdFYY3EMiUPTwHzSR5.jpg" height="230px"width="160px">"" 
+        <img class="hover" style="border-radius: 7px;" src="https://wallpapers.com/images/featured/avengers-assemble-pictures-bci4k731q4fiilqe.jpg" height="230px"width="160px"> ""   
+        <img class="hover" style="border-radius: 7px;" src="https://2.bp.blogspot.com/-cPZZtG_uRgY/VzIQpRE3oTI/AAAAAAAAD5Y/87qulnqCQL00pngmpIOgKvcFwGaHudKCQCLcB/s1600/Marvel-Civil-War-alternate-poster.jpg" height="230px"width="160px"> "" 
+        <img class="hover" style="border-radius: 7px;" src="https://picfiles.alphacoders.com/214/thumb-1920-214533.jpg" height="230px"width="160px"> ""
+        <img class="hover" style="border-radius: 7px;" src="https://image.tmdb.org/t/p/original/gj0fKa4jjwxZLmVq7I8tv13V45.jpg" height="230px"width="160px"> ""
+        </marquee>
+    </div>
+   
+
+    <div id="resultsContainer"></div>
+
+   
+
+    <script>
+        function searchSpotify() {
+            const searchInput = document.getElementById('searchInput').value.trim();
+
+            if (!searchInput) {
+                alert('Please enter a search term.');
+                return;
+            }
+
+            fetch(`https://spotify23.p.rapidapi.com/search/?q=${searchInput}&type=multi&offset=0&limit=10&numberOfTopResults=5`, {
+                method: 'GET',
+                headers: {
+                    'X-RapidAPI-Key': '5f6ad288aamshb637f0abaf78701p1d7a1djsnc7b60b58dcb9',
+                    'X-RapidAPI-Host': 'spotify23.p.rapidapi.com'
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+                localStorage.setItem("data", JSON.stringify(data));
+                window.location.assign("./songs.html");
+
+                let resultsContainer = document.getElementById('resultsContainer');
+                resultsContainer.innerHTML = '';
+
+                data.albums.items.forEach(item => {
+                    let card = document.createElement('div');
+                    card.className = 'card';
+
+                    let imageN = document.createElement('img');
+                    imageN.src = item.data.coverArt.sources[0].url;
+                    card.appendChild(imageN);
+
+                    let songN = document.createElement('h3');
+                    songN.textContent = item.data.album.name;
+                    card.appendChild(songN);
+
+                    let artistN = document.createElement('h3');
+                    artistN.textContent = item.data.album.artist;
+                    card.appendChild(artistN);
+
+                    resultsContainer.appendChild(card);
+                });
+            })
+            .catch(error => {
+                console.error('Error fetching data:', error);
+            });
+        }
+    </script>
+</body>
+</html>
